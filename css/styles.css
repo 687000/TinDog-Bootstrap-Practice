@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#title {
+    background-color: #ff4c68;
+    color: white;
+}
+/*container 自动resposneive的*/
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+h1, h2,h3,h4,h5 {
+    font-weight: 700;   
+}
+h1 {  
+    font-size: 3.5rem;  
+    line-height: 1.5;  
+}
+
+/* Navigation bar*/
+.navbar {
+    padding:0 0 4.5rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:2.5rem;
+    font-weight:bold;
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-size:1.2rem;
+    font-weight: 300;
+}
+
+/* Download buttons*/
+.download-button {
+    margin: 5% 3% 5% 0;;
+}
+
+/* Title image*/
+.title-image-parent {
+    position: relative;
+}
+.title-image {
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    width:60%;
+}
+@media (max-width: 1109px) {
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+}
+
+/* Features*/
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position:relative;
+    z-index: 1;
+}
+.feature-box {
+    text-align: center;
+    padding: 4.5%;
+}
+.feature-box i {
+    color: #ef8172;
+}
+.feature-box i:hover {
+    animation-name: skyset;
+    animation-duration: 800ms;
+}
+@-webkit-keyframes skyset {
+0% {
+  color:#ef8172;
+}
+100% {
+  color:#ff4c68;;
+}
+}
+.feature-box p {
+    margin: 0 auto;
+    width: 60%;
+    color: #8f8f8f;
+}
+
+/* testimonials*/
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+#testimonials h2 {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+.testimonials-img {
+    width:10%;
+    border-radius: 100%;
+    margin:20px;
+}
+.carousel-item {
+    padding:4% 15% 0;
+}
+/* Press */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+  
+/* price card */
+#pricing {
+    padding: 100px;
+}
+#pricing .card {
+    text-align: center;
+}
+#pricing .btn {
+    width: 100%;
+    height:50px
+}
+
+/* Call to Action */
+#cta {
+    text-align: center;
+    color: white;
+    background-color: #ff4c68;
+    padding: 5% 15% 3%;
+}
+#cta h3 {
+    font-size: 2.5rem;
+}
+
+/* Footer */
+#footer{
+    padding: 7% 15%;
+    background-color: #fff;
+    color:grey;
+    text-align: center;
+}
+#footer i {
+    margin: 0 10px 10px;
+}
